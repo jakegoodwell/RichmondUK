@@ -1,0 +1,65 @@
+<html lang="en" style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard : domenicocrusco : PythonAnywhere</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Dashboard : domenicocrusco : PythonAnywhere">
+        <meta name="author" content="PythonAnywhere LLP">
+        <meta name="google-site-verification" content="O4UxDrfcHjC44jybs2vajc1GgRkTKCTRgVzeV6I9V14" />
+
+
+        <!-- Le styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" />
+
+        <link rel="stylesheet" href="/static/CACHE/css/de746dca902a.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/static/CACHE/css/4458c687e813.css" type="text/css" /><link rel="stylesheet" href="/static/CACHE/css/81b175e51b4b.css" type="text/css" media="screen" />
+
+        <!-- Le javascript -->
+        <script type="text/javascript">
+            var Anywhere = {};
+            Anywhere.urls = {};
+            Anywhere.csrfToken = "3sBiv5ppSZ26nu2ROzv17c3a4EtWWvGM";
+        </script>
+        <script type="text/javascript" src="/static/CACHE/js/8dc09e227063.js"></script>
+        
+
+        <script type="text/javascript" src="/static/CACHE/js/41576fa3fce0.js"></script>
+        
+  <script>
+    $(document).ready(function () {
+      var apiUrl = "/api/v0/user/domenicocrusco/files/tree/";
+      var home = "/home/domenicocrusco/";
+      var input = $('.autocomplete_path');
+      var completer = new Anywhere.Files.AutocompletePath({
+        input: input,
+        initialPath: home,
+        apiUrl: apiUrl,
+      });
+
+      var filesRootUrl = "/user/domenicocrusco/files/";
+      var token = "3sBiv5ppSZ26nu2ROzv17c3a4EtWWvGM";
+      Anywhere2.initialize(
+        $('#id_edit_file_button_span')[0],
+        { url: filesRootUrl, token: token, input: input[0]}
+      );
+
+      $('[data-toggle="tooltip"]').tooltip()
+
+      var new_user_steps = [
+        {
+          title: "Welcome to PythonAnywhere!",
+          content: "<p>This tour will give you a quick overview of how the site works.  It only lasts 7 steps.  Promise!<\/p>",
+          placement: "bottom",
+        },
+        {
+          element: ".consoles_panel",
+          title: "Consoles",
+          content: "<p>Consoles are where you can type commands and see the result immediately.<\/p>" +
+            "<p>Python consoles just run Python and Bash consoles (sometimes called the command line or terminals) are for system commands.<\/p>"
+        },
+        {
+          element: ".files_panel",
+          title: "Files",
+          content: "<p>If you want to write a program, you'll need to create a file to store it in.<\/p>" +
+            "<p>This panel shows files that you've edited recently, and you can click the 'Open another file' button to create a new file, or to edit an existing file.<\/p>",
+        },
